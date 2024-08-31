@@ -52,6 +52,7 @@ public class JsonFactory {
 
             builder.append(resourceString).append(",");
         });
+        builder.deleteCharAt(builder.length() - 1);
         builder.append("]");
 
         return builder.toString();
